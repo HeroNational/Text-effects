@@ -1,179 +1,14 @@
-<style>
-    body {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        background-color: #34495e;
-      }
-      
-      .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 160px;
-        overflow:hidden;
-        
-        font-family: 'Lato', sans-serif;
-        font-size: 35px;
-        line-height: 40px;
-        color: #ecf0f1;
-        
-        &__container {
-          font-weight: 600;
-          overflow: hidden;
-          height: 40px;
-          padding: 0 40px;
-      
-          &:before {
-            content: '[';
-            left: 0;
-          }
-      
-          &:after {
-            content: ']';
-            position: absolute;
-            right: 0;
-          }
-      
-          &:after, &:before {
-            position: absolute;
-            top: 0;
-            
-            color: #16a085;
-            font-size: 42px;
-            line-height: 40px;
-            
-            -webkit-animation-name: opacity;
-            -webkit-animation-duration: 2s;
-            -webkit-animation-iteration-count: infinite;
-            animation-name: opacity;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-          }
-      
-          &__text {
-            display: inline;
-            float: left;
-            margin: 0;
-          }
-      
-          &__list {
-            margin-top: 0;
-            padding-left: 110px;
-            text-align: left;
-            list-style: none;
-            
-            -webkit-animation-name: change;
-            -webkit-animation-duration: 10s;
-            -webkit-animation-iteration-count: infinite;
-            animation-name: change;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-      
-            &__item {
-              line-height:40px;
-              margin:0;
-            }
-          }
-        }
-      }
-      
-      @-webkit-keyframes opacity {
-        0%, 100% {opacity:0;}
-        50% {opacity:1;}
-      }
-      
-      @-webkit-keyframes change {
-        0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-        16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-        33.32%,45.98% {transform:translate3d(0,-50%,0);}
-        49.98%,62.64% {transform:translate3d(0,-75%,0);}
-        66.64%,79.3% {transform:translate3d(0,-50%,0);}
-        83.3%,95.96% {transform:translate3d(0,-25%,0);}
-      }
-      
-      @-o-keyframes opacity {
-        0%, 100% {opacity:0;}
-        50% {opacity:1;}
-      }
-      
-      @-o-keyframes change {
-        0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-        16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-        33.32%,45.98% {transform:translate3d(0,-50%,0);}
-        49.98%,62.64% {transform:translate3d(0,-75%,0);}
-        66.64%,79.3% {transform:translate3d(0,-50%,0);}
-        83.3%,95.96% {transform:translate3d(0,-25%,0);}
-      }
-      
-      @-moz-keyframes opacity {
-        0%, 100% {opacity:0;}
-        50% {opacity:1;}
-      }
-      
-      @-moz-keyframes change {
-        0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-        16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-        33.32%,45.98% {transform:translate3d(0,-50%,0);}
-        49.98%,62.64% {transform:translate3d(0,-75%,0);}
-        66.64%,79.3% {transform:translate3d(0,-50%,0);}
-        83.3%,95.96% {transform:translate3d(0,-25%,0);}
-      }
-      
-      @keyframes opacity {
-        0%, 100% {opacity:0;}
-        50% {opacity:1;}
-      }
-      
-      @keyframes change {
-        0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-        16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-        33.32%,45.98% {transform:translate3d(0,-50%,0);}
-        49.98%,62.64% {transform:translate3d(0,-75%,0);}
-        66.64%,79.3% {transform:translate3d(0,-50%,0);}
-        83.3%,95.96% {transform:translate3d(0,-25%,0);}
-      }
-      
-     /*
-      // 6 is the number of animation.
-      // Here, there are 4 lines :
-      
-      // 1 to 2
-      // 2 to 3
-      // 3 to 4
-      // 4 to 3
-      // 3 to 2
-      // 2 to 1
-      
-      // 6x + 6y = 100 (100% duration)
-      
-      // HERE : 
-      // y = 4 -> Animation between two lines
-      // x = 12.66 -> Time spent on a line
-      
-      // You can define a value and calculate the other if you want change speed or the number of lines
-     */
-</style>
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<div class="center-outer">
+    <div class="center-inner">
 
-<div class="content">
-  <div class="content__container">
-    <p class="content__container__text">
-      Hello
-    </p>
-    
-    <ul class="content__container__list">
-      <li class="content__container__list__item">world !</li>
-      <li class="content__container__list__item">bob !</li>
-      <li class="content__container__list__item">users !</li>
-      <li class="content__container__list__item">everybody !</li>
-    </ul>
-  </div>
+        <div class="bubbles">
+            <h1>Bubbling Header</h1>
+        </div>
+
+    </div>
 </div>
-
 <style>
-      #forkongithub a  {
+  #forkongithub a   {
       background: black;
       color: darkorange;
       text-decoration: none;
@@ -187,13 +22,13 @@
       transition: 0.5s;
   }
 
-      #forkongithub a :hover {
+  #forkongithub a  :hover {
       background: black;
       color: teal;
   }
 
-      #forkongithub a ::before,
-      #forkongithub a ::after {
+  #forkongithub a  ::before,
+  #forkongithub a  ::after {
       content: "";
       width: 100%;
       display: block;
@@ -204,7 +39,7 @@
       background: purple;
   }
 
-      #forkongithub a ::after {
+  #forkongithub a  ::after {
       bottom: 1px;
       top: auto;
   }
@@ -221,7 +56,7 @@
           z-index: 9999;
       }
 
-          #forkongithub a  {
+      #forkongithub a   {
           width: 200px;
           position: absolute;
           top: 60px;
@@ -240,3 +75,101 @@
     GitHub
 </a>
 </span>
+<script src="./assets/jquery"></script>
+<style>
+
+    /* Non essential CSS - Just for example centering */
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .center-outer {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    .center-inner {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    /* Essential CSS - Makes the effect work */
+
+    body {
+        background-color: #3498db;
+    }
+
+    .bubbles {
+        display: inline-block;
+        font-family: arial;
+        position: relative;
+    }
+
+    .bubbles h1 {
+        position: relative;
+        margin: 1em 0 0;
+        font-family: 'Luckiest Guy', cursive;
+        color: #fff;
+        z-index: 2;
+    }
+
+    .individual-bubble {
+        position: absolute;
+        border-radius: 100%;
+        bottom: 10px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+</style>
+
+<script>
+    // Created for an Articles on:
+
+    jquery(document).ready(function($){
+    
+        // Define a blank array for the effect positions. This will be populated based on width of the title.
+        var bArray = [];
+        // Define a size array, this will be used to vary bubble sizes
+        var sArray = [4,6,8,10];
+    
+        // Push the header width values to bArray
+        for (var i = 0; i < $('.bubbles').width(); i++) {
+            bArray.push(i);
+        }
+        
+        // Function to select random array element
+        // Used within the setInterval a few times
+        function randomValue(arr) {
+            return arr[Math.floor(Math.random() * arr.length)];
+        }
+    
+        // setInterval function used to create new bubble every 350 milliseconds
+        setInterval(function(){
+            
+            // Get a random size, defined as variable so it can be used for both width and height
+            var size = randomValue(sArray);
+            // New bubble appeneded to div with it's size and left position being set inline
+            // Left value is set through getting a random value from bArray
+            $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+            
+            // Animate each bubble to the top (bottom 100%) and reduce opacity as it moves
+            // Callback function used to remove finsihed animations from the page
+            $('.individual-bubble').animate({
+                'bottom': '100%',
+                'opacity' : '-=0.7'
+            }, 3000, function(){
+                $(this).remove()
+            }
+            );
+    
+    
+        }, 350);
+    
+    });
+</script>
