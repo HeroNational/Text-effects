@@ -1,0 +1,141 @@
+<svg id="svg" viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">LEINAD</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+<style>
+  #forkongithub a   {
+      background: black;
+      color: darkorange;
+      text-decoration: none;
+      font-family: arial, sans-serif;
+      text-align: center;
+      font-weight: bold;
+      padding: 5px 40px;
+      font-size: 1rem;
+      line-height: 2rem;
+      position: relative;
+      transition: 0.5s;
+  }
+
+  #forkongithub a  :hover {
+      background: black;
+      color: teal;
+  }
+
+  #forkongithub a  ::before,
+  #forkongithub a  ::after {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      height: 1px;
+      background: purple;
+  }
+
+  #forkongithub a  ::after {
+      bottom: 1px;
+      top: auto;
+  }
+
+  @media screen and (min-width:800px) {
+      #forkongithub {
+          position: absolute;
+          display: block;
+          top: 0;
+          right: 0;
+          width: 200px;
+          overflow: hidden;
+          height: 200px;
+          z-index: 9999;
+      }
+
+      #forkongithub a   {
+          width: 200px;
+          position: absolute;
+          top: 60px;
+          right: -60px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+      }
+  }
+</style>
+<span id="forkongithub">
+<a href="https://github.com/HeroNational/Text-effects">Fork me on
+    GitHub
+</a>
+</span>
+<style>
+/*
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+*/
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 500;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 50%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+</style>
